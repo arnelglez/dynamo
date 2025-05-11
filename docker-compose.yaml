@@ -1,0 +1,10 @@
+services:
+  dynamodb-local:
+    image: amazon/dynamodb-local:latest
+    container_name: dynamodb-local
+    ports:
+      - "8000:8000"
+    environment:
+      AWS_ACCESS_KEY_ID: 'my_access_key'
+      AWS_SECRET_ACCESS_KEY: 'my_secret_key'
+      AWS_REGION: 'us-east-1'
